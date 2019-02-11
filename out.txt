@@ -1,0 +1,15 @@
+Open text is: fdsf.
+Filled container. 
+Container contains 10 elements.
+0: It is Zamena: rule = Atbash, code = uwhu.
+1: It is Cezar: rot = 3, code = igvi.
+2: It is Zamena: rule = Pare-change, code = ecte.
+3: It is Cezar: rot = 5, code = kixk.
+4: It is Zamena: rule = Keyword-change, code = zfoz.
+5: It is Cezar: rot = 25, code = ecre.
+6: It is Cezar: rot = 26, code = fdsf.
+7: It is Zamena: rule = Incorrect rule number, code = fdsf.
+8: It is Cezar: rot = 8, code = nlan.
+9: It is Cezar: rot = 9, code = ombo.
+Empty container. 
+Container contains 0 elements.
