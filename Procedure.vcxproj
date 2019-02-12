@@ -159,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="codes.cpp" />
+    <ClCompile Include="container_OutZamena.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="conteiners.cpp" />
     <ClCompile Include="cezars.cpp" />
