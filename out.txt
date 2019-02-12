@@ -1,7 +1,7 @@
 Filled container. 
 Container contains 10 elements.
-0: It is Zamena: rule = Atbash, open = keep, code = pvvk.
-1: It is Cezar: rot = 3, open = it, code = lw.
+0: It is Numeric: digit = 1, open = keep, code = 115516.
+1: It is Numeric: digit = 3, open = it, code = 1122.
 2: It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
 3: It is Cezar: rot = 5, open = stupid, code = xyzuni.
 4: It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
