@@ -38,16 +38,16 @@ namespace simple_codes {
 	}
 	// Сигнатуры требуемых внешних функций
 
-	void Out(code &s, ofstream &ofst, string open_text);
+	void Out(code &s, ofstream &ofst);
 	// Вывод содержимого контейнера в указанный поток
-	void Out(container &c, ofstream &ofst, string open_text)
+	void Out(container &c, ofstream &ofst)
 	{
 		ofst << "Container contains " << c.len
 			<< " elements." << endl;
 		for (int i = 0; i < c.len; i++)
 		{
 			ofst << i << ": ";
-			Out(*(c.cont[i]), ofst, open_text);
+			Out(*(c.cont[i]), ofst);
 		}
 	}
 } // end simple_codes namespace

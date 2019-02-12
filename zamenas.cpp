@@ -11,7 +11,7 @@ namespace simple_codes
 		ifst >> r.rule;
 	}
 	// Вывод параметров шифра замены 
-	void Out(zamena &r, ofstream &ofst, string open_text)
+	void Out(zamena &r, ofstream &ofst, char message[20])
 	{
 		//-----------------------------------------------------------codiing
 		string alf = "abcdefghijklmnopqrstuvwxyz";
@@ -19,26 +19,34 @@ namespace simple_codes
 		string SZ2 = "badcfeghjilknmporqtsvuxwzy";
 		string SZ3 = "shifrzamenybcdgjklopqtuvwx";
 		string rulename = "Incorrect rule number";
-				for (int i = 0; i < open_text.length(); i++) {
-			int tmp = alf.find(tolower(open_text[i])); //номер текущего символа в alf
+		string str_mes = "";
+		int i = 0;
+		while ((message[i]) != '\n' && alf.find(tolower(message[i])) >= 0 && alf.find(tolower(message[i])) < 26 && i < 20)
+		{
+			str_mes += message[i];
+			i++;
+		}
+
+			for (int i = 0; i < str_mes.length(); i++) {
+			int tmp = alf.find(tolower(str_mes[i])); //номер текущего символа в alf
 			if (tmp >= 0) {
 				if (r.rule == 1) {
 					rulename = "Atbash"; //Атбаш
-					open_text[i] = SZ1[tmp];
+					str_mes[i] = SZ1[tmp];
 				}
 				if (r.rule == 2) {
 					rulename = "Pare-change"; //попарная замена
-					open_text[i] = SZ2[tmp];
+					str_mes[i] = SZ2[tmp];
 				}
 				if (r.rule == 3) {
 					rulename = "Keyword-change"; //шифр замены с кодовым словом SHIFRZAMENY
-					open_text[i] = SZ3[tmp];
+					str_mes[i] = SZ3[tmp];
 				}
 			}
 		}
 		//-----------------------------------------------------------codiing
 		ofst << "It is Zamena: rule = " << rulename
-			<< ", code = " << open_text  << "." << endl;
+			<< ", open = " << message << ", code = " << str_mes << "." << endl;
 	}
 } // end simple_codes namespace
 

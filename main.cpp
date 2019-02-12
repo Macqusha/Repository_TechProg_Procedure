@@ -1,5 +1,4 @@
 ﻿// Procedure.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//#include "pch.h"
 #include <iostream>
 #include <fstream>
 #include "conteiner.h"
@@ -12,7 +11,7 @@ namespace simple_codes {
 	void Init(container &c);
 	void Clear(container &c);
 	void In(container &c, ifstream &ifst);
-	void Out(container &c, ofstream &ofst, string open_text);
+	void Out(container &c, ofstream &ofst);
 }
 
 using namespace simple_codes;
@@ -26,8 +25,8 @@ int main(int argc, char* argv[])
 			"Waited: command infile outfile" << endl;
 		exit(1);
 	}
-	ifstream ifst(argv[1]);//проверка, что в файле только цифры
-	char symb;
+	ifstream ifst(argv[1]);//проверка, что в файле только цифры 		//warning
+	/*char symb;
 	while (!ifst.eof())
 	{
 		ifst >> symb;
@@ -38,24 +37,18 @@ int main(int argc, char* argv[])
 		}
 	}
 	ifst.close();
-	ifst.open(argv[1]);
+	ifst.open(argv[1]);			*/
 	ofstream ofst(argv[2]);
 
-	std::string open_text;
-	cout << "Enter open text (message): " << endl;
-	std::cin >> open_text;
-
-
 	cout << "Start" << endl;
-	ofst << "Open text is: " << open_text << "." << endl;
 	container c;
 	Init(c);
 	In(c, ifst);
 	ofst << "Filled container. " << endl;
-	Out(c, ofst, open_text);
+	Out(c, ofst);
 	Clear(c);
 	ofst << "Empty container. " << endl;
-	Out(c, ofst, open_text);
+	Out(c, ofst);
 	cout << "Stop" << endl;
 	system("pause");
 	return 0;
