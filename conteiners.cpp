@@ -35,8 +35,15 @@ namespace simple_codes {
 		}
 
 	}
-	// Сигнатуры требуемых внешних функций
 
+	int MesLength(code &s)
+	{
+		int length = 0;
+		while (s.message[length] != '\0' && length < 20) length++;
+		return length;
+	};
+
+	// Сигнатуры требуемых внешних функций
 	void Out(code &s, ofstream &ofst);
 	// Вывод содержимого контейнера в указанный поток
 	void Out(container &c, ofstream &ofst)
@@ -47,6 +54,8 @@ namespace simple_codes {
 		{
 			ofst << i << ": ";
 			Out(*(c.cont[i]), ofst);
+			ofst << "Length = "
+				<< MesLength(*(c.cont[i])) << endl;
 		}
 	}
 } // end simple_codes namespace
