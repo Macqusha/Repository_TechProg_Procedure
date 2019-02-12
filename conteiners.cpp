@@ -1,7 +1,6 @@
 #include "conteiner.h"
 #include "code_atd.h"	
 #include <fstream>
-#include <string>
 
 using namespace std;
 

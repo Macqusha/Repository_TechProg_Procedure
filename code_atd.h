@@ -2,8 +2,7 @@
 #define __code_atd__
 // ѕодключение необходимых типов данных
 #include "zamena_atd.h"		
-#include "cezar_atd.h"
-#include <string>		
+#include "cezar_atd.h"		
 namespace simple_codes 
 {
 	// структура, обобщающа€ все имеющиес€ шифры
@@ -18,7 +17,7 @@ namespace simple_codes
 			cezar t;			
 		};
 		char message[20]; //исходный текст
-		//warning мен€€ размер массива, изменить также код зашифровани€ в файлах cezars.cpp и zamenas.cpp. искать по фразе: && i < 20)
+		//Warning. ћен€€ размер массива, изменить также условие в коде зашифровани€ в файлах cezars.cpp и zamenas.cpp. 
 	};
 } // end simple_codes namespace
 #endif

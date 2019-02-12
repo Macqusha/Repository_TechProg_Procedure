@@ -1,6 +1,5 @@
 #ifndef __zamena_atd__
 #define __zamena_atd__
-#include <string>
 namespace simple_codes {
 	// רטפנû חאלוםû
 	struct zamena {

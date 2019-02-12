@@ -1,6 +1,5 @@
 #include <fstream>
 #include "code_atd.h"
-#include <string>
 
 using namespace std;
 
@@ -16,15 +15,16 @@ namespace simple_codes {
 		int k;
 		ifst >> k;
 		sp = new code;
-		ifst >> sp->message;
 		switch (k) {
 		case 1:
 			sp->k = code::key::ZAMENA;
 			In(sp->r, ifst);
+			ifst >> sp->message;
 			return sp;
 		case 2:
 			sp->k = code::key::CEZAR;
 			In(sp->t, ifst);
+			ifst >> sp->message;
 			return sp;
 		default:
 			return 0;
