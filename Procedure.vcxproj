@@ -162,6 +162,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="conteiners.cpp" />
     <ClCompile Include="cezars.cpp" />
+    <ClCompile Include="sort.cpp" />
     <ClCompile Include="zamenas.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
