@@ -31,11 +31,12 @@ namespace simple_codes
 		ifst >> t.rot;
 	}
 	//Âûגמה ןאנאלוענמג רטפנא Öוחאנÿ
-	void Out(cezar &t, ofstream &ofst, char message[20])
+	void Out(cezar &t, ofstream &ofst, char message[20], char owner[20])
 	{
 		ofst << "It is Cezar: rot = " << t.rot 
 			<< ", open = " << message 
-			<< ", code = " << codingCezar(message, t.rot) << "." << endl;
+			<< ", code = " << codingCezar(message, t.rot) 
+			<< ", owner = " << owner << "." << endl;
 	}
 } // end simple_codes namespace
 

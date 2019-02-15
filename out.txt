@@ -1,14 +1,14 @@
 Filled container. 
 Container contains 10 elements.
-0: It is Zamena: rule = Atbash, open = keep, code = pvvk.
-1: It is Cezar: rot = 3, open = it, code = lw.
-2: It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
-3: It is Cezar: rot = 5, open = stupid, code = xyzuni.
-4: It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
-5: It is Cezar: rot = 25, open = is, code = hr.
-6: It is Cezar: rot = 26, open = evil, code = evil.
-7: It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
-8: It is Cezar: rot = 8, open = repeat, code = zmxmib.
-9: It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+0: It is Zamena: rule = Atbash, open = keep, code = pvvk, owner = Borisov.
+1: It is Cezar: rot = 3, open = it, code = lw, owner = Gritsiv.
+2: It is Zamena: rule = Pare-change, open = simple, code = tjnokf, owner = Gutsal.
+3: It is Cezar: rot = 5, open = stupid, code = xyzuni, owner = Dalinkevich.
+4: It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd, owner = Dimaksyan.
+5: It is Cezar: rot = 25, open = is, code = hr, owner = Drachevskiy.
+6: It is Cezar: rot = 26, open = evil, code = evil, owner = Klimkin.
+7: It is Zamena: rule = Incorrect rule number, open = dont, code = dont, owner = Levanyuk.
+8: It is Cezar: rot = 8, open = repeat, code = zmxmib, owner = Nemkov.
+9: It is Cezar: rot = 9, open = yourself, code = hxdabnuo, owner = Khromovskikh.
 Empty container. 
 Container contains 0 elements.

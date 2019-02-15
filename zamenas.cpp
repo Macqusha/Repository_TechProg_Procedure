@@ -43,7 +43,7 @@ namespace simple_codes
 		ifst >> r.rule;
 	}
 	// Вывод параметров шифра замены 
-	void Out(zamena &r, ofstream &ofst, char message[20])
+	void Out(zamena &r, ofstream &ofst, char message[20], char owner[20])
 	{
 		string rulename = "Incorrect rule number";
 		if (r.rule == 1) rulename = "Atbash"; //Атбаш
@@ -51,7 +51,8 @@ namespace simple_codes
 		if (r.rule == 3) rulename = "Keyword-change"; //шифр замены с кодовым словом SHIFRZAMENY
 		ofst << "It is Zamena: rule = " << rulename
 			<< ", open = " << message 
-			<< ", code = " << codingZamena(message,r.rule) << "." << endl;
+			<< ", code = " << codingZamena(message,r.rule) 
+			<< ", owner = " << owner << "." << endl;
 	}
 } // end simple_codes namespace
 
