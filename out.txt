@@ -1,24 +1,24 @@
 Filled container. 
 Container contains 10 elements.
-0: It is Zamena: rule = Atbash, open = keep, code = pvvk.
-Length = 4
-1: It is Cezar: rot = 3, open = it, code = lw.
-Length = 2
+0: It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
+Length = 11
+1: It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+Length = 8
 2: It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
 Length = 6
-3: It is Cezar: rot = 5, open = stupid, code = xyzuni.
+3: It is Cezar: rot = 8, open = repeat, code = zmxmib.
 Length = 6
-4: It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
-Length = 11
-5: It is Cezar: rot = 25, open = is, code = hr.
+4: It is Cezar: rot = 5, open = stupid, code = xyzuni.
+Length = 6
+5: It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
+Length = 4
+6: It is Zamena: rule = Atbash, open = keep, code = pvvk.
+Length = 4
+7: It is Cezar: rot = 26, open = evil, code = evil.
+Length = 4
+8: It is Cezar: rot = 3, open = it, code = lw.
 Length = 2
-6: It is Cezar: rot = 26, open = evil, code = evil.
-Length = 4
-7: It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
-Length = 4
-8: It is Cezar: rot = 8, open = repeat, code = zmxmib.
-Length = 6
-9: It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
-Length = 8
+9: It is Cezar: rot = 25, open = is, code = hr.
+Length = 2
 Empty container. 
 Container contains 0 elements.
