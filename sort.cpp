@@ -5,7 +5,7 @@
 using namespace std;
 
 namespace simple_codes {
-	// Сигнатуры требуемых функций
+	// Сигнатуры требуемых внешних функций
 	int MesLength(code &s);
 
 	// Cравнение ключей двух программных объектов

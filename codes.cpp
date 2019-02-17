@@ -4,7 +4,7 @@
 using namespace std;
 
 namespace simple_codes {
-	// Сигнатуры требуемых внешних функций 
+	// Сигнатуры требуемых внешних функций
 	void In(zamena &r, ifstream &ist);
 	void In(cezar  &t, ifstream &ist);
 
@@ -31,6 +31,7 @@ namespace simple_codes {
 		}
 	}
 
+	// Сигнатуры требуемых внешних функций 
 	void Out(zamena &r, ofstream &ofst, char message[20]);
 	void Out(cezar  &t, ofstream &ofst, char message[20]);
 
@@ -47,6 +48,14 @@ namespace simple_codes {
 			ofst << "Incorrect figure!" << endl;
 		}
 	}
+
+	//Вычисление длины исходного текста
+	int MesLength(code &s)
+	{
+		int length = 0;
+		while (s.message[length] != '\0' && length < 20) length++;
+		return length;
+	};
 } // end simple_codes namespace
 
 

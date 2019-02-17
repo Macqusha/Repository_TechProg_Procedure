@@ -8,14 +8,13 @@ namespace simple_codes {
 	// Инициализация контейнера
 	void Init(container &c) { c.len = 0; }
 	// Очистка контейнера от элементов 
-	// (освобождение памяти)
-
 	void Clear(container &c) {
 		for (int i = 0; i < c.len; i++) {
 			delete c.cont[i];
 		}
 		c.len = 0;
 	}
+
 	// Сигнатуры требуемых внешних функций
 	code *In(ifstream &ifdt);
 
@@ -35,13 +34,6 @@ namespace simple_codes {
 		}
 
 	}
-
-	int MesLength(code &s)
-	{
-		int length = 0;
-		while (s.message[length] != '\0' && length < 20) length++;
-		return length;
-	};
 
 	// Сигнатуры требуемых внешних функций
 	void Out(code &s, ofstream &ofst);
@@ -65,6 +57,7 @@ namespace simple_codes {
 	
 	// Сигнатуры требуемых внешних функций
 	void Out(code &s, ofstream &ofst);
+	int MesLength(code &s);
 	// Вывод содержимого контейнера в указанный поток
 	void Out(container &c, ofstream &ofst)
 	{
