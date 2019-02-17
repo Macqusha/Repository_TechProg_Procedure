@@ -15,7 +15,8 @@ string codingNumeric(char message[20], int digit)
 		i++;
 	}
 	string str_result = "";
-	for (int i = 0; i < str_mes.length(); i++) {
+	for (int i = 0; i < str_mes.length(); i++) 
+	{
 		int tmp = alf.find(tolower(str_mes[i])); //номер текущего символа в alf
 		if (tmp >= 0)
 			str_result += to_string((tmp + (digit % 26))%26);
