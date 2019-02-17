@@ -20,6 +20,7 @@ namespace simple_codes
 		};
 		char message[20]; //исходный текст
 		//Warning. ћен€€ размер массива, изменить также условие в коде зашифровани€ в файлах cezars.cpp и zamenas.cpp. 
+		char owner[20]; //исходный текст
 	};
 } // end simple_codes namespace
 #endif
