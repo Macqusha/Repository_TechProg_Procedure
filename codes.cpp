@@ -7,6 +7,7 @@ namespace simple_codes {
 	// Сигнатуры требуемых внешних функций
 	void In(zamena &r, ifstream &ist);
 	void In(cezar  &t, ifstream &ist);
+	void In(numeric  &t, ifstream &ist);
 
 	// Ввод параметров обобщенного шифра из файла
 	code* In(ifstream &ifst)
@@ -26,6 +27,11 @@ namespace simple_codes {
 			In(sp->t, ifst);
 			ifst >> sp->message;
 			return sp;
+		case 3:
+			sp->k = code::key::NUMERIC;
+			In(sp->b, ifst);
+			ifst >> sp->message;
+			return sp;
 		default:
 			return 0;
 		}
@@ -34,6 +40,7 @@ namespace simple_codes {
 	// Сигнатуры требуемых внешних функций 
 	void Out(zamena &r, ofstream &ofst, char message[20]);
 	void Out(cezar  &t, ofstream &ofst, char message[20]);
+	void Out(numeric  &t, ofstream &ofst, char message[20]);
 
 	// Вывод параметров текущего шифра в поток
 	void Out(code &s, ofstream &ofst) {
@@ -43,6 +50,9 @@ namespace simple_codes {
 			break;
 		case code::key::CEZAR:
 			Out(s.t, ofst, s.message);
+			break;
+		case code::key::NUMERIC:
+			Out(s.b, ofst, s.message);
 			break;
 		default:
 			ofst << "Incorrect figure!" << endl;

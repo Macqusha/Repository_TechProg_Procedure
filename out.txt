@@ -12,11 +12,11 @@ Length = 6
 Length = 6
 5: It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
 Length = 4
-6: It is Zamena: rule = Atbash, open = keep, code = pvvk.
+6: It is Numeric: digit = 1, open = keep, code = 115516.
 Length = 4
 7: It is Cezar: rot = 26, open = evil, code = evil.
 Length = 4
-8: It is Cezar: rot = 3, open = it, code = lw.
+8: It is Numeric: digit = 3, open = it, code = 1122.
 Length = 2
 9: It is Cezar: rot = 25, open = is, code = hr.
 Length = 2
