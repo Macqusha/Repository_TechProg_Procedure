@@ -12,6 +12,7 @@ namespace simple_codes {
 	void In(container &c, ifstream &ifst);
 	void Out(container &c, ofstream &ofst);
 	void Sort(container &c);
+	void OutZamena(container &c, ofstream &ofst);
 }
 
 using namespace simple_codes;
@@ -47,7 +48,7 @@ int main(int argc, char* argv[])
 	In(c, ifst);
 	ofst << "Filled container. " << endl;
 	Sort(c);
-	Out(c, ofst);
+	OutZamena(c, ofst);
 	Clear(c);
 	ofst << "Empty container. " << endl;
 	Out(c, ofst);

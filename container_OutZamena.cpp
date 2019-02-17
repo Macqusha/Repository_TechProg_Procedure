@@ -11,6 +11,8 @@ namespace simple_codes {
 	//-----------------------------------------------------
 	// Вывод только прямоугольников
 	void OutZamena(container &c, ofstream &ofst) {
+		ofst << "Container contains " << c.len
+			<< " elements." << endl;
 		ofst << "Only zamena's." << endl;
 		for (int i = 0; i < c.len; i++) {
 			ofst << i << ": ";
