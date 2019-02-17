@@ -32,11 +32,12 @@ namespace simple_codes
 		ifst >> b.digit;
 	}
 	//Âûגמה ןאנאלוענמג רטפנא Öוחאנÿ
-	void Out(numeric &b, ofstream &ofst, char message[20])
+	void Out(numeric &b, ofstream &ofst, char message[20], char owner[20])
 	{
 		ofst << "It is Numeric: digit = " << b.digit
 			<< ", open = " << message
-			<< ", code = " << codingNumeric(message, b.digit) << "." << endl;
+			<< ", code = " << codingNumeric(message, b.digit)
+			<< ", owner = " << owner << "." << endl;
 	}
 } // end simple_codes namespace
 

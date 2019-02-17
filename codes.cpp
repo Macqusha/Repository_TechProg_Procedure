@@ -33,6 +33,7 @@ namespace simple_codes {
 			sp->k = code::key::NUMERIC;
 			In(sp->b, ifst);
 			ifst >> sp->message;
+			ifst >> sp->owner;
 			return sp;
 		default:
 			return 0;
@@ -54,7 +55,7 @@ namespace simple_codes {
 			Out(s.t, ofst, s.message, s.owner);
 			break;
 		case code::key::NUMERIC:
-			Out(s.b, ofst, s.message);
+			Out(s.b, ofst, s.message, s.owner);
 			break;
 		default:
 			ofst << "Incorrect figure!" << endl;
