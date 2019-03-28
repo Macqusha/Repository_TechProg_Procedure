@@ -5,36 +5,57 @@
 using namespace std;
 const int maxStringeSize = 80;
 
-string codingZamena(char message[maxStringeSize], int rule)
+namespace simple_codes
 {
-	string alf = "abcdefghijklmnopqrstuvwxyz";
-	string SZ1 = "zyxwvutsrqponmlkjihgfedcba";
-	string SZ2 = "badcfeghjilknmporqtsvuxwzy";
-	string SZ3 = "shifrzamenybcdgjklopqtuvwx";
-	string str_mes = "";
-	int i = 0;
-	while ((message[i]) != '\n' && alf.find(tolower(message[i])) >= 0 && alf.find(tolower(message[i])) < 26 && i < maxStringeSize)
+	string codingZamena(char message[maxStringeSize], int rule)
 	{
-		str_mes += message[i];
-		i++;
-	}
+		string alf = "abcdefghijklmnopqrstuvwxyz";
+		string sz1 = "zyxwvutsrqponmlkjihgfedcba";
+		string sz2 = "badcfehgjilknmporqtsvuxwzy";
+		string sz3 = "shifrzamenybcdgjklopqtuvwx";
+		string ALF = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		string SZ1 = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
+		string SZ2 = "BADCFEHGJILKNMPORQTSVUXWZY";
+		string SZ3 = "SHIFRZAMENYBCDGJKLOPQTUVWX";
 
-	for (int i = 0; i < str_mes.length(); i++) {
-		int tmp = alf.find(tolower(str_mes[i])); //номер текущего символа в alf
-		if (tmp >= 0) {
-			if (rule == 1) {
-				str_mes[i] = SZ1[tmp];
+		string str_mes = "";
+		int i = 0;
+		while ((message[i]) != '\0' && i < maxStringeSize)
+		{
+			str_mes += message[i];
+			i++;
+		}
+
+		for (int i = 0; i < str_mes.length(); i++) {
+			int tmp = alf.find(str_mes[i]); //номер текущего символа в alf
+			if (tmp >= 0) {
+				if (rule == 1) {
+					str_mes[i] = sz1[tmp];
+				}
+				if (rule == 2) {
+					str_mes[i] = sz2[tmp];
+				}
+				if (rule == 3) {
+					str_mes[i] = sz3[tmp];
+				}
 			}
-			if (rule == 2) {
-				str_mes[i] = SZ2[tmp];
-			}
-			if (rule == 3) {
-				str_mes[i] = SZ3[tmp];
+
+			tmp = ALF.find(str_mes[i]); //номер текущего символа в ALF
+			if (tmp >= 0) {
+				if (rule == 1) {
+					str_mes[i] = SZ1[tmp];
+				}
+				if (rule == 2) {
+					str_mes[i] = SZ2[tmp];
+				}
+				if (rule == 3) {
+					str_mes[i] = SZ3[tmp];
+				}
 			}
 		}
+		return str_mes;
 	}
-	return str_mes;
-}
+} // end simple_codes namespace
 
 namespace simple_codes
 {

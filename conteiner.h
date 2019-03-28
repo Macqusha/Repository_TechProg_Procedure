@@ -12,6 +12,6 @@ namespace simple_codes {
 		enum { max_len = 100 };
 		int len; // текущая длина
 		code *cont[max_len];
-	};
+	};	
 }
 #endif

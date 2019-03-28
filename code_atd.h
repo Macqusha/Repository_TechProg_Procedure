@@ -20,7 +20,6 @@ namespace simple_codes
 			numeric b;
 		};
 		char message[maxStringeSize]; //исходный текст
-		//Warning. ћен€€ размер массива, изменить также условие в коде зашифровани€ в файлах cezars.cpp и zamenas.cpp. 
 		char owner[maxStringeSize]; //исходный текст
 	};
 } // end simple_codes namespace

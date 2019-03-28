@@ -5,26 +5,36 @@
 using namespace std;
 const int maxStringeSize = 80;
 
-string codingCezar(char message[maxStringeSize], int rot)
+namespace simple_codes
 {
-	string alf = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxy";
-	string str_mes = "";
-	int i = 0;
-	while ((message[i]) != '\n' && alf.find(tolower(message[i])) >= 0 && alf.find(tolower(message[i])) < 26 && i < maxStringeSize)
+	//Сигнатуры используемых внешних функций
+	int StrLength(char mes[maxStringeSize]);
+
+	string codingCezar(char message[maxStringeSize], int rot)
 	{
-		str_mes += message[i];
-		i++;
-	}
+		string alf = "abcdefghijklmnopqrstuvwxyz";
+		string ALF = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		string str_mes = "";
+		int i = 0;
+		while ((message[i]) != '\0' && i < maxStringeSize)
+		{
+			str_mes += message[i];
+			i++;
+		}
 
-	for (int i = 0; i < str_mes.length(); i++) {
-		int tmp = alf.find(tolower(str_mes[i])); //номер текущего символа в alf
-		if (tmp >= 0)
-			str_mes[i] = alf[tmp + (rot % 26)];
+		for (int i = 0; i < str_mes.length(); i++) {
+			int tmp = alf.find(str_mes[i]); //номер текущего символа в alf
+			if (tmp >= 0)
+				str_mes[i] = alf[(tmp + (rot % 26)) % 26];
+			tmp = ALF.find(str_mes[i]); //номер текущего символа в ALF
+			if (tmp >= 0)
+				str_mes[i] = ALF[(tmp + (rot % 26)) % 26];
+		}
+		return str_mes;
 	}
-	return str_mes;
-}
+} // end simple_codes namespace 
 
-namespace simple_codes 
+namespace simple_codes
 {
 	// Ввод параметра шифра Цезаря из потока
 	void In(cezar &t, ifstream &ifst)
@@ -34,10 +44,9 @@ namespace simple_codes
 	//Вывод параметров шифра Цезаря
 	void Out(cezar &t, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize])
 	{
-		ofst << "It is Cezar: rot = " << t.rot 
-			<< ", open = " << message 
-			<< ", code = " << codingCezar(message, t.rot) 
+		ofst << "It is Cezar: rot = " << t.rot
+			<< ", open = " << message
+			<< ", code = " << codingCezar(message, t.rot)
 			<< ", owner = " << owner << ". ";
 	}
-} // end simple_codes namespace
-
+} // end simple_codes namespace 

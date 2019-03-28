@@ -166,6 +166,7 @@
     <ClCompile Include="cezars.cpp" />
     <ClCompile Include="sort.cpp" />
     <ClCompile Include="numerics.cpp" />
+    <ClCompile Include="unitTests.cpp" />
     <ClCompile Include="zamenas.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

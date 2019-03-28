@@ -62,12 +62,17 @@ namespace simple_codes {
 		}
 	}
 
+	int StrLength(char mes[maxStringeSize])
+	{
+		int length = 0;
+		while (mes[length] != '\0' && length < maxStringeSize) length++;
+		return length;
+	};
+
 	//Вычисление длины исходного текста
 	int MesLength(code &s)
 	{
-		int length = 0;
-		while (s.message[length] != '\0' && length < maxStringeSize) length++;
-		return length;
+		return StrLength(s.message);
 	};
 } // end simple_codes namespace
 
