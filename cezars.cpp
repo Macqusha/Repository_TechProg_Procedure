@@ -3,13 +3,14 @@
 #include "cezar_atd.h"
 
 using namespace std;
+const int maxStringeSize = 80;
 
-string codingCezar(char message[20], int rot)
+string codingCezar(char message[maxStringeSize], int rot)
 {
 	string alf = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxy";
 	string str_mes = "";
 	int i = 0;
-	while ((message[i]) != '\n' && alf.find(tolower(message[i])) >= 0 && alf.find(tolower(message[i])) < 26 && i < 20)
+	while ((message[i]) != '\n' && alf.find(tolower(message[i])) >= 0 && alf.find(tolower(message[i])) < 26 && i < maxStringeSize)
 	{
 		str_mes += message[i];
 		i++;
@@ -31,12 +32,12 @@ namespace simple_codes
 		ifst >> t.rot;
 	}
 	//Âûגמה ןאנאלוענמג רטפנא Öוחאנÿ
-	void Out(cezar &t, ofstream &ofst, char message[20], char owner[20])
+	void Out(cezar &t, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize])
 	{
 		ofst << "It is Cezar: rot = " << t.rot 
 			<< ", open = " << message 
 			<< ", code = " << codingCezar(message, t.rot) 
-			<< ", owner = " << owner << "." << endl;
+			<< ", owner = " << owner << ". ";
 	}
 } // end simple_codes namespace
 

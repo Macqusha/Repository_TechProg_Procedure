@@ -19,8 +19,8 @@ namespace simple_codes {
 			if (c.cont[i]->k == code::ZAMENA)
 			{
 				Out(*(c.cont[i]), ofst);
-				ofst << "   Length = "
-					<< MesLength(*(c.cont[i])) << endl;
+				ofst << "Length = "
+				<< MesLength(*(c.cont[i])) << "." << endl;
 			}
 			else
 				ofst << endl;

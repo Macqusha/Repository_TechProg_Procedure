@@ -48,8 +48,10 @@ int main(int argc, char* argv[])
 	In(c, ifst);
 	ofst << "Filled container. " << endl;
 	Sort(c);
-	//Out(c, ofst);
+	Out(c, ofst);
+	ofst << endl;
 	OutZamena(c, ofst);
+	ofst << endl;
 	Clear(c);
 	ofst << "Empty container. " << endl;
 	Out(c, ofst);

@@ -3,8 +3,9 @@
 #include "zamena_atd.h"
 
 using namespace std;
+const int maxStringeSize = 80;
 
-string codingZamena(char message[20], int rule)
+string codingZamena(char message[maxStringeSize], int rule)
 {
 	string alf = "abcdefghijklmnopqrstuvwxyz";
 	string SZ1 = "zyxwvutsrqponmlkjihgfedcba";
@@ -12,7 +13,7 @@ string codingZamena(char message[20], int rule)
 	string SZ3 = "shifrzamenybcdgjklopqtuvwx";
 	string str_mes = "";
 	int i = 0;
-	while ((message[i]) != '\n' && alf.find(tolower(message[i])) >= 0 && alf.find(tolower(message[i])) < 26 && i < 20)
+	while ((message[i]) != '\n' && alf.find(tolower(message[i])) >= 0 && alf.find(tolower(message[i])) < 26 && i < maxStringeSize)
 	{
 		str_mes += message[i];
 		i++;
@@ -43,7 +44,7 @@ namespace simple_codes
 		ifst >> r.rule;
 	}
 	// Âûגמה ןאנאלוענמג רטפנא חאלוםû 
-	void Out(zamena &r, ofstream &ofst, char message[20], char owner[20])
+	void Out(zamena &r, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize])
 	{
 		string rulename = "Incorrect rule number";
 		if (r.rule == 1) rulename = "Atbash"; //Àעבאר
@@ -52,7 +53,7 @@ namespace simple_codes
 		ofst << "It is Zamena: rule = " << rulename
 			<< ", open = " << message 
 			<< ", code = " << codingZamena(message,r.rule) 
-			<< ", owner = " << owner << "." << endl;
+			<< ", owner = " << owner << ". ";
 	}
 } // end simple_codes namespace
 

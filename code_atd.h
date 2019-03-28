@@ -7,6 +7,7 @@
 namespace simple_codes 
 {
 	// структура, обобщающа€ все имеющиес€ шифры
+	const int maxStringeSize = 80;
 	struct code 
 	{
 		// значени€ ключей дл€ каждого из шифров
@@ -18,9 +19,9 @@ namespace simple_codes
 			cezar t;
 			numeric b;
 		};
-		char message[20]; //исходный текст
+		char message[maxStringeSize]; //исходный текст
 		//Warning. ћен€€ размер массива, изменить также условие в коде зашифровани€ в файлах cezars.cpp и zamenas.cpp. 
-		char owner[20]; //исходный текст
+		char owner[maxStringeSize]; //исходный текст
 	};
 } // end simple_codes namespace
 #endif

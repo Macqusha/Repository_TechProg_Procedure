@@ -67,8 +67,8 @@ namespace simple_codes {
 		{
 			ofst << i << ": ";
 			Out(*(c.cont[i]), ofst);
-			ofst << "   Length = "
-				<< MesLength(*(c.cont[i])) << endl;
+			ofst << "Length = "
+				<< MesLength(*(c.cont[i])) << "." << endl;
 		}
 	}
 } // end simple_codes namespace

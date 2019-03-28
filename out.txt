@@ -1,20 +1,36 @@
 Filled container. 
-Container contains 11 elements.
+Container contains 14 elements.
+0: It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd, owner = Dimaksyan. Length = 11.
+1: It is Cezar: rot = 9, open = yourself, code = hxdabnuo, owner = Khromovskikh. Length = 8.
+2: It is Zamena: rule = Pare-change, open = simple, code = tjnokf, owner = Gutsal. Length = 6.
+3: It is Cezar: rot = 8, open = repeat, code = zmxmib, owner = Nemkov. Length = 6.
+4: It is Cezar: rot = 5, open = stupid, code = xyzuni, owner = Dalinkevich. Length = 6.
+5: It is Cezar: rot = 26, open = evil, code = evil, owner = Klimkin. Length = 4.
+6: It is Zamena: rule = Incorrect rule number, open = dont, code = dont, owner = Levanyuk. Length = 4.
+7: It is Numeric: digit = 1, open = keep, code = 115516, owner = Borisov. Length = 4.
+8: It is Zamena: rule = Atbash, open = test, code = gvhg, owner = Aleev. Length = 4.
+9: It is Numeric: digit = 1, open = bird, code = 29184, owner = User2. Length = 4.
+10: It is Cezar: rot = 10, open = doc, code = nym, owner = User3. Length = 3.
+11: It is Zamena: rule = Atbash, open = cat, code = xzg, owner = User1. Length = 3.
+12: It is Cezar: rot = 25, open = is, code = hr, owner = Drachevskiy. Length = 2.
+13: It is Cezar: rot = 3, open = it, code = lw, owner = Gritsiv. Length = 2.
+
+Container contains 14 elements.
 Only zamena's.
-0: It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd, owner = Dimaksyan.
-   Length = 11
+0: It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd, owner = Dimaksyan. Length = 11.
 1: 
-2: It is Zamena: rule = Pare-change, open = simple, code = tjnokf, owner = Gutsal.
-   Length = 6
+2: It is Zamena: rule = Pare-change, open = simple, code = tjnokf, owner = Gutsal. Length = 6.
 3: 
 4: 
 5: 
-6: It is Zamena: rule = Incorrect rule number, open = dont, code = dont, owner = Levanyuk.
-   Length = 4
+6: It is Zamena: rule = Incorrect rule number, open = dont, code = dont, owner = Levanyuk. Length = 4.
 7: 
-8: It is Zamena: rule = Atbash, open = test, code = gvhg, owner = Aleev.
-   Length = 4
+8: It is Zamena: rule = Atbash, open = test, code = gvhg, owner = Aleev. Length = 4.
 9: 
 10: 
+11: It is Zamena: rule = Atbash, open = cat, code = xzg, owner = User1. Length = 3.
+12: 
+13: 
+
 Empty container. 
 Container contains 0 elements.
