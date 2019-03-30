@@ -73,7 +73,7 @@ namespace simple_codes {
 	int MesLength(code &s)
 	{
 		return StrLength(s.message);
-	};
+	}
 } // end simple_codes namespace
 
 

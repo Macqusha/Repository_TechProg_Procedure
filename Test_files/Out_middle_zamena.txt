@@ -1,0 +1,1 @@
+It is Zamena: rule = Pare-change, open = TestMes, code = SftsNft, owner = TestOwn. 

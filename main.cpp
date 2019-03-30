@@ -13,7 +13,6 @@ namespace simple_codes {
 	void Out(container &c, ofstream &ofst);
 	void Sort(container &c);
 	void OutZamena(container &c, ofstream &ofst);
-	void UnitTest_CallAllTests();
 }
 
 using namespace simple_codes;
@@ -57,8 +56,6 @@ int main(int argc, char* argv[])
 	ofst << "Empty container. " << endl;
 	Out(c, ofst);
 	cout << "Stop" << endl;
-
-	UnitTest_CallAllTests();
 
 	system("pause");
 	return 0;

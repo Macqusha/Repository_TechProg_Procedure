@@ -1,0 +1,1 @@
+It is Numeric: digit = 3, open = test3, code = 22721223, owner = tester3. 

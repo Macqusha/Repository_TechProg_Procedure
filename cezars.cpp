@@ -7,9 +7,6 @@ const int maxStringeSize = 80;
 
 namespace simple_codes
 {
-	//Сигнатуры используемых внешних функций
-	int StrLength(char mes[maxStringeSize]);
-
 	string codingCezar(char message[maxStringeSize], int rot)
 	{
 		string alf = "abcdefghijklmnopqrstuvwxyz";

@@ -1,0 +1,4 @@
+Container contains 3 elements.
+0: It is Zamena: rule = Atbash, open = test, code = gvhg, owner = Aleev. Length = 4.
+1: It is Cezar: rot = 3, open = TestMes, code = WhvwPhv, owner = TestOwn. Length = 7.
+2: It is Numeric: digit = 4, open = myMes, code = 16216822, owner = Me. Length = 5.
