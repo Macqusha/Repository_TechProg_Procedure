@@ -58,12 +58,11 @@ int main(int argc, char* argv[])
 		case 0:
 			if (!(ifst >> typecode)) // Нельзя считать число
 			{
-				if(!(ifst >> buferStr) && (i > 0)) // Конец данных и не пустой файл - ошибки нет
+				if(!(ifst >> buferStr) && (i > 0) && (typecode != 0)) // Конец данных и не пустой файл - ошибки нет
 					goto noerrors;
 				else  // Пустой файл или ошибка в данных
 				{
 					error_code = 1;
-					break;
 				}
 			}
 			else
@@ -71,7 +70,6 @@ int main(int argc, char* argv[])
 				if ((typecode < 1) || (typecode > 3)) // Ошибка в данных
 				{
 					error_code = 1;
-					break;
 				}
 			}
 			i++;
@@ -96,19 +94,19 @@ int main(int argc, char* argv[])
 	// Определение типа ошибки
 	switch (error_code) {
 	case 1:
-		cout << "Error. Wrong type. Line " << i << "."<< endl;
+		cout << "Error. Wrong type. Parametr #" << i << "."<< endl;
 		return -1;
 		break;
 	case 2:
-		cout << "Error. Wrong parameter. Line " << i << "." << endl;
+		cout << "Error. Wrong parameter. Parametr #" << i << "." << endl;
 		return -2;
 		break;
 	case 3:
-		cout << "Error. Wrong message. Line " << i << "." << endl;
+		cout << "Error. Wrong message. Parametr #" << i << "." << endl;
 		return -3;
 		break;
 	case 4:
-		cout << "Error. Wrong owner. Line " << i << "." << endl;
+		cout << "Error. Wrong owner. Parametr #" << i << "." << endl;
 		return -4;
 		break;
 	}
