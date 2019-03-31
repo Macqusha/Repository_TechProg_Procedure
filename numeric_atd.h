@@ -2,9 +2,9 @@
 #define __numeric_atd__
 
 namespace simple_codes {
-	// רטפנ צטפנמגמי חאלוםû
+	// Øטפנ צטפנמגמי חאלוםû
 	struct numeric {
-		int digit; // ןאנאלוענ רטפנא
+		int digit; // Ïאנאלוענ רטפנא
 	};
 } // end simple_codes namespace
 #endif

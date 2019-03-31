@@ -46,7 +46,8 @@ namespace simple_codes {
 	void Out(numeric  &t, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize]);
 
 	// Вывод параметров текущего шифра в поток
-	void Out(code &s, ofstream &ofst) {
+	void Out(code &s, ofstream &ofst) 
+	{
 		switch (s.k) {
 		case code::key::ZAMENA:
 			Out(s.r, ofst, s.message, s.owner);
@@ -57,8 +58,6 @@ namespace simple_codes {
 		case code::key::NUMERIC:
 			Out(s.b, ofst, s.message, s.owner);
 			break;
-		default:
-			ofst << "Incorrect figure!" << endl;
 		}
 	}
 
@@ -69,7 +68,7 @@ namespace simple_codes {
 		return length;
 	};
 
-	//Вычисление длины исходного текста
+	// Вычисление длины исходного текста
 	int MesLength(code &s)
 	{
 		return StrLength(s.message);

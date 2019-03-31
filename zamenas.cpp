@@ -7,7 +7,7 @@ const int maxStringeSize = 80;
 
 namespace simple_codes
 {
-	string codingZamena(char message[maxStringeSize], int rule)
+	string СodingZamena(char message[maxStringeSize], int rule)
 	{
 		string alf = "abcdefghijklmnopqrstuvwxyz";
 		string sz1 = "zyxwvutsrqponmlkjihgfedcba";
@@ -26,54 +26,49 @@ namespace simple_codes
 			i++;
 		}
 
-		for (int i = 0; i < str_mes.length(); i++) {
-			int tmp = alf.find(str_mes[i]); //номер текущего символа в alf
-			if (tmp >= 0) {
-				if (rule == 1) {
+		for (int i = 0; i < str_mes.length(); i++) 
+		{
+			int tmp = alf.find(str_mes[i]); // Номер текущего символа в alf
+			if (tmp >= 0) 
+			{
+				if (rule == 1) 
 					str_mes[i] = sz1[tmp];
-				}
-				if (rule == 2) {
+				if (rule == 2)
 					str_mes[i] = sz2[tmp];
-				}
-				if (rule == 3) {
+				if (rule == 3) 
 					str_mes[i] = sz3[tmp];
-				}
 			}
 
-			tmp = ALF.find(str_mes[i]); //номер текущего символа в ALF
-			if (tmp >= 0) {
-				if (rule == 1) {
+			tmp = ALF.find(str_mes[i]); // Номер текущего символа в ALF
+			if (tmp >= 0) 
+			{
+				if (rule == 1) 
 					str_mes[i] = SZ1[tmp];
-				}
-				if (rule == 2) {
+				if (rule == 2) 
 					str_mes[i] = SZ2[tmp];
-				}
-				if (rule == 3) {
+				if (rule == 3) 
 					str_mes[i] = SZ3[tmp];
-				}
 			}
 		}
 		return str_mes;
 	}
-} // end simple_codes namespace
 
-namespace simple_codes
-{
 	// Ввод параметров шифра замены из файла
 	void In(zamena &r, ifstream &ifst)
 	{
 		ifst >> r.rule;
 	}
+
 	// Вывод параметров шифра замены 
 	void Out(zamena &r, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize])
 	{
 		string rulename = "Incorrect rule number";
-		if (r.rule == 1) rulename = "Atbash"; //Атбаш
-		if (r.rule == 2) rulename = "Pare-change"; //попарная замена
-		if (r.rule == 3) rulename = "Keyword-change"; //шифр замены с кодовым словом SHIFRZAMENY
+		if (r.rule == 1) rulename = "Atbash"; // Атбаш
+		if (r.rule == 2) rulename = "Pare-change"; // Попарная замена
+		if (r.rule == 3) rulename = "Keyword-change"; // Шифр замены с кодовым словом SHIFRZAMENY
 		ofst << "It is Zamena: rule = " << rulename
 			<< ", open = " << message 
-			<< ", code = " << codingZamena(message,r.rule) 
+			<< ", code = " << СodingZamena(message,r.rule) 
 			<< ", owner = " << owner << ". ";
 	}
 } // end simple_codes namespace

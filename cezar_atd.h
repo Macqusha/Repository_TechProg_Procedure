@@ -2,9 +2,9 @@
 #define __cezar_atd__
 
 namespace simple_codes {
-	// шифр Цезаря
+	// Шифр Цезаря
 	struct cezar {
-		int rot; // сдвиг
+		int rot; // Сдвиг
 	};
 } // end simple_codes namespace
 #endif

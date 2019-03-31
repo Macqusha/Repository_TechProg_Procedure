@@ -7,7 +7,7 @@ const int maxStringeSize = 80;
 
 namespace simple_codes
 {
-	string codingNumeric(char message[maxStringeSize], int digit)
+	string СodingNumeric(char message[maxStringeSize], int digit)
 	{
 		string alf = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxy";
 		string str_mes = "";
@@ -20,7 +20,7 @@ namespace simple_codes
 		string str_result = "";
 		for (int i = 0; i < str_mes.length(); i++) 
 		{
-			int tmp = alf.find(tolower(str_mes[i])); //номер текущего символа в alf
+			int tmp = alf.find(tolower(str_mes[i])); // Номер текущего символа в alf
 			if (tmp >= 0)
 				str_result += to_string((tmp + (digit % 26)) % 26);
 			else
@@ -28,21 +28,18 @@ namespace simple_codes
 		}
 		return str_result;
 	}
-} // end simple_codes namespace
 
-namespace simple_codes
-{
 	// Ввод параметра шифра Цезаря из потока
 	void In(numeric &b, ifstream &ifst)
 	{
 		ifst >> b.digit;
 	}
-	//Вывод параметров шифра Цезаря
+	// Вывод параметров шифра Цезаря
 	void Out(numeric &b, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize])
 	{
 		ofst << "It is Numeric: digit = " << b.digit
 			<< ", open = " << message
-			<< ", code = " << codingNumeric(message, b.digit)
+			<< ", code = " << СodingNumeric(message, b.digit)
 			<< ", owner = " << owner << ". ";
 	}
 } // end simple_codes namespace

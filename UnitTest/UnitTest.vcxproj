@@ -155,15 +155,14 @@
   <ItemGroup>
     <ClInclude Include="..\Procedure\cezar_atd.h" />
     <ClInclude Include="..\Procedure\code_atd.h" />
-    <ClInclude Include="..\Procedure\conteiner.h" />
+    <ClInclude Include="..\Procedure\container_atd.h" />
     <ClInclude Include="..\Procedure\numeric_atd.h" />
     <ClInclude Include="..\Procedure\zamena_atd.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Procedure\cezars.cpp" />
     <ClCompile Include="..\Procedure\codes.cpp" />
-    <ClCompile Include="..\Procedure\container_OutZamena.cpp" />
-    <ClCompile Include="..\Procedure\conteiners.cpp" />
+    <ClCompile Include="..\Procedure\containers.cpp" />
     <ClCompile Include="..\Procedure\main.cpp" />
     <ClCompile Include="..\Procedure\numerics.cpp" />
     <ClCompile Include="..\Procedure\sort.cpp" />

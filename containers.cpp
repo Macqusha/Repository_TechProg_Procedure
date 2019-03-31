@@ -1,4 +1,4 @@
-#include "conteiner.h"
+#include "container_atd.h"
 #include "code_atd.h"	
 #include <fstream>
 
@@ -6,10 +6,15 @@ using namespace std;
 
 namespace simple_codes {
 	// Инициализация контейнера
-	void Init(container &c) { c.len = 0; }
+	void Init(container &c) 
+	{ 
+		c.len = 0; 
+	}
 	// Очистка контейнера от элементов 
-	void Clear(container &c) {
-		for (int i = 0; i < c.len; i++) {
+	void Clear(container &c) 
+	{
+		for (int i = 0; i < c.len; i++) 
+		{
 			delete c.cont[i];
 		}
 		c.len = 0;
@@ -19,7 +24,8 @@ namespace simple_codes {
 	code *In(ifstream &ifdt);
 
 	// Ввод содержимого контейнера из указанного потока
-	void In(container &c, ifstream &ifst) {
+	void In(container &c, ifstream &ifst) 
+	{
 		while (!ifst.eof())
 		{
 			if (c.len > 99)
@@ -69,6 +75,26 @@ namespace simple_codes {
 			Out(*(c.cont[i]), ofst);
 			ofst << "Length = "
 				<< MesLength(*(c.cont[i])) << "." << endl;
+		}
+	}
+
+	// Вывод только шифров замены
+	void OutZamena(container &c, ofstream &ofst) 
+	{
+		ofst << "Container contains " << c.len
+			<< " elements." << endl;
+		ofst << "Only zamena's." << endl;
+		for (int i = 0; i < c.len; i++) 
+		{
+			ofst << i << ": ";
+			if (c.cont[i]->k == code::ZAMENA)
+			{
+				Out(*(c.cont[i]), ofst);
+				ofst << "Length = "
+					<< MesLength(*(c.cont[i])) << "." << endl;
+			}
+			else
+				ofst << endl;
 		}
 	}
 } // end simple_codes namespace

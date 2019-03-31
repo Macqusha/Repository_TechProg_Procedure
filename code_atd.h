@@ -6,22 +6,22 @@
 #include "numeric_atd.h"
 namespace simple_codes 
 {
-	// максимальная длина исходного текста
+	// Максимальная длина исходного текста
 	const int maxStringeSize = 80;
-	// структура, обобщающая все имеющиеся шифры
+	// Структура, обобщающая все имеющиеся шифры
 	struct code 
 	{
-		// значения ключей для каждого из шифров
+		// Значения ключей для каждого из шифров
 		enum key {ZAMENA, CEZAR, NUMERIC};
-		key k; // ключ
-		// используемые альтернативы
-		union { // используем включение
+		key k; // Ключ
+		// Используемые альтернативы
+		union { // Используем включение
 			zamena r;			
 			cezar t;
 			numeric b;
 		};
-		char message[maxStringeSize]; //исходный текст
-		char owner[maxStringeSize]; //исходный текст
+		char message[maxStringeSize]; // Исходный текст
+		char owner[maxStringeSize]; // Владелец
 	};
 } // end simple_codes namespace
 #endif
