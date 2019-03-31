@@ -1,5 +1,5 @@
 1
-1
+2
 test
 Aleev
 3
@@ -31,7 +31,7 @@ Drachevskiy
 evil
 Klimkin
 1
-4
+3
 dont
 Levanyuk
 2

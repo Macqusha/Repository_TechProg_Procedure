@@ -1,6 +1,2 @@
-﻿  cezars.cpp
-d:\учеба\прога\procedure 4\procedure\cezars.cpp(22): warning C4018: <: несоответствие типов со знаком и без знака
-  zamenas.cpp
-d:\учеба\прога\procedure 4\procedure\zamenas.cpp(29): warning C4018: <: несоответствие типов со знаком и без знака
-  Создание кода...
-  UnitTest.vcxproj -> D:\Учеба\Прога\Procedure 4\Debug\UnitTest.dll
+﻿  main.cpp
+  UnitTest.vcxproj -> D:\Учеба\Прога\Procedure 5\Debug\UnitTest.dll
