@@ -7,7 +7,7 @@ const int maxStringeSize = 80;
 
 namespace simple_codes
 {
-	string СodingZamena(char message[maxStringeSize], int rule)
+	string CodingZamena(char message[maxStringeSize], int rule)
 	{
 		string alf = "abcdefghijklmnopqrstuvwxyz";
 		string sz1 = "zyxwvutsrqponmlkjihgfedcba";
@@ -68,7 +68,7 @@ namespace simple_codes
 		if (r.rule == 3) rulename = "Keyword-change"; // Шифр замены с кодовым словом SHIFRZAMENY
 		ofst << "It is Zamena: rule = " << rulename
 			<< ", open = " << message 
-			<< ", code = " << СodingZamena(message,r.rule) 
+			<< ", code = " << CodingZamena(message,r.rule) 
 			<< ", owner = " << owner << ". ";
 	}
 } // end simple_codes namespace

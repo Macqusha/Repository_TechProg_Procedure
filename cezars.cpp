@@ -7,7 +7,7 @@ const int maxStringeSize = 80;
 
 namespace simple_codes
 {
-	string ÑodingCezar(char message[maxStringeSize], int rot)
+	string CodingCezar(char message[maxStringeSize], int rot)
 	{
 		string alf = "abcdefghijklmnopqrstuvwxyz";
 		string ALF = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -41,7 +41,7 @@ namespace simple_codes
 	{
 		ofst << "It is Cezar: rot = " << t.rot
 			<< ", open = " << message
-			<< ", code = " << ÑodingCezar(message, t.rot)
+			<< ", code = " << CodingCezar(message, t.rot)
 			<< ", owner = " << owner << ". ";
 	}
 } // end simple_codes namespace 
