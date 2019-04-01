@@ -3,17 +3,17 @@
 #include "cezar_atd.h"
 
 using namespace std;
-const int maxStringeSize = 80;
+const int MAX_STRING_SIZE = 80;
 
 namespace simple_codes
 {
-	string CodingCezar(char message[maxStringeSize], int rot)
+	string CodingCezar(char message[MAX_STRING_SIZE], int rot)
 	{
 		string alf = "abcdefghijklmnopqrstuvwxyz";
 		string ALF = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		string str_mes = "";
 		int i = 0;
-		while ((message[i]) != '\0' && i < maxStringeSize)
+		while ((message[i]) != '\0' && i < MAX_STRING_SIZE)
 		{
 			str_mes += message[i];
 			i++;
@@ -37,7 +37,7 @@ namespace simple_codes
 		ifst >> t.rot;
 	}
 	// Âûגמה ןאנאלוענמג רטפנא Öוחאנÿ
-	void Out(cezar &t, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize])
+	void Out(cezar &t, ofstream &ofst, char message[MAX_STRING_SIZE], char owner[MAX_STRING_SIZE])
 	{
 		ofst << "It is Cezar: rot = " << t.rot
 			<< ", open = " << message

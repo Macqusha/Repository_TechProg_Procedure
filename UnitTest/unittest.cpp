@@ -12,12 +12,12 @@ using namespace simple_codes;
 using namespace std;
 
 namespace simple_codes {
-	const int moreThanMax = maxStringeSize + 20;
+	const int moreThanMax = MAX_STRING_SIZE + 20;
 	// Сигнатуры используемых внешних функций
 	int MesLength(code &s);
-	string CodingCezar(char message[maxStringeSize], int rot);
-	string CodingZamena(char message[maxStringeSize], int rule);
-	string CodingNumeric(char message[maxStringeSize], int digit);
+	string CodingCezar(char message[MAX_STRING_SIZE], int rot);
+	string CodingZamena(char message[MAX_STRING_SIZE], int rule);
+	string CodingNumeric(char message[MAX_STRING_SIZE], int digit);
 	void In(cezar &t, ifstream &ifst);
 	void In(numeric &t, ifstream &ifst);
 	void In(zamena &t, ifstream &ifst);
@@ -27,9 +27,9 @@ namespace simple_codes {
 	void Clear(container &c);
 	void Out(container &c, ofstream &ofst);
 	void Out(code &s, ofstream &ofst);
-	void Out(cezar &t, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize]);
-	void Out(numeric &t, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize]);
-	void Out(zamena &t, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize]);
+	void Out(cezar &t, ofstream &ofst, char message[MAX_STRING_SIZE], char owner[MAX_STRING_SIZE]);
+	void Out(numeric &t, ofstream &ofst, char message[MAX_STRING_SIZE], char owner[MAX_STRING_SIZE]);
+	void Out(zamena &t, ofstream &ofst, char message[MAX_STRING_SIZE], char owner[MAX_STRING_SIZE]);
 	void Sort(container &c);
 	void OutZamena(container &c, ofstream &ofst);
 } // end simple_codes namespace
@@ -43,10 +43,10 @@ public:
 
 	TEST_METHOD(Test1)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int rot = 0;
 		char testMes[moreThanMax] = "AbcdeFG 123 %^&";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingCezar(message, rot);
@@ -57,10 +57,10 @@ public:
 
 	TEST_METHOD(Test2)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int rot = 1;
 		char testMes[moreThanMax] = "AbcdeFG 123 %^&";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingCezar(message, rot);
@@ -71,10 +71,10 @@ public:
 
 	TEST_METHOD(Test3)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int rot = 25;
 		char testMes[moreThanMax] = "AbcdeFG 123 %^&";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingCezar(message, rot);
@@ -85,10 +85,10 @@ public:
 
 	TEST_METHOD(Test4)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int rot = 26;
 		char testMes[moreThanMax] = "AbcdeFG 123 %^&";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingCezar(message, rot);
@@ -99,10 +99,10 @@ public:
 
 	TEST_METHOD(Test5)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int rot = 53;
 		char testMes[moreThanMax] = "AbcdeFG 123 %^&";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingCezar(message, rot);
@@ -118,10 +118,10 @@ public:
 
 	TEST_METHOD(Test1)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int rule = 1;
 		char testMes[moreThanMax] = "AbcdeFG..yZ 123 %^&";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingZamena(message, rule);
@@ -132,10 +132,10 @@ public:
 
 	TEST_METHOD(Test2)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int rule = 2;
 		char testMes[moreThanMax] = "AbcdeFG..yZ 123 %^&";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingZamena(message, rule);
@@ -146,10 +146,10 @@ public:
 
 	TEST_METHOD(Test3)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int rule = 2;
 		char testMes[moreThanMax] = "BadcfEH..zY 123 %^&";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingZamena(message, rule);
@@ -160,10 +160,10 @@ public:
 
 	TEST_METHOD(Test4)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int rule = 3;
 		char testMes[moreThanMax] = "AbcdeFG..yZ 123 %^&";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingZamena(message, rule);
@@ -174,10 +174,10 @@ public:
 
 	TEST_METHOD(Test5)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int rule = 3;
 		char testMes[moreThanMax] = "90 %(^& TEST";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingZamena(message, rule);
@@ -193,10 +193,10 @@ public:
 
 	TEST_METHOD(Test1)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int digit = 0;
 		char testMes[moreThanMax] = "ABCDEFGHIJKlmnopqrstuvwxyz 12390 !@#$%^&*";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingNumeric(message, digit);
@@ -207,10 +207,10 @@ public:
 
 	TEST_METHOD(Test2)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int digit = 1;
 		char testMes[moreThanMax] = "ABCDEFGHIJKlmnopqrstuvwxyz 12390 !@#$%^&*";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingNumeric(message, digit);
@@ -221,10 +221,10 @@ public:
 
 	TEST_METHOD(Test3)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int digit = 25;
 		char testMes[moreThanMax] = "ABCDEFGHIJKlmnopqrstuvwxyz 12390 !@#$%^&*";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingNumeric(message, digit);
@@ -235,10 +235,10 @@ public:
 
 	TEST_METHOD(Test4)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int digit = 26;
 		char testMes[moreThanMax] = "ABCDEFGHIJKlmnopqrstuvwxyz 12390 !@#$%^&*";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingNumeric(message, digit);
@@ -249,10 +249,10 @@ public:
 
 	TEST_METHOD(Test5)
 	{
-		char message[maxStringeSize];
+		char message[MAX_STRING_SIZE];
 		int digit = 53;
 		char testMes[moreThanMax] = "ABCDEFGHIJKlmnopqrstuvwxyz 12390 !@#$%^&*";
-		for (int i = 0; i < maxStringeSize; i++)
+		for (int i = 0; i < MAX_STRING_SIZE; i++)
 			message[i] = testMes[i];
 
 		string actual = CodingNumeric(message, digit);
@@ -624,9 +624,9 @@ public:
 	{
 		code* testing_type = new code;
 		testing_type->k = testing_type->CEZAR;
-		char tmp_mes[maxStringeSize] = "TestMes";
+		char tmp_mes[MAX_STRING_SIZE] = "TestMes";
 		strcpy(testing_type->message, tmp_mes);
-		char tmp_own[maxStringeSize] = "TestOwn";
+		char tmp_own[MAX_STRING_SIZE] = "TestOwn";
 		strcpy(testing_type->owner, tmp_own);
 		testing_type->t.rot = 3;
 		ofstream test_file_out("../Procedure/Test_Files/Out_middle_cezar.txt");
@@ -646,9 +646,9 @@ public:
 	{
 		code* testing_type = new code;
 		testing_type->k = testing_type->ZAMENA;
-		char tmp_mes[maxStringeSize] = "TestMes";
+		char tmp_mes[MAX_STRING_SIZE] = "TestMes";
 		strcpy(testing_type->message, tmp_mes);
-		char tmp_own[maxStringeSize] = "TestOwn";
+		char tmp_own[MAX_STRING_SIZE] = "TestOwn";
 		strcpy(testing_type->owner, tmp_own);
 		testing_type->r.rule = 2;
 		ofstream test_file_out("../Procedure/Test_Files/Out_middle_zamena.txt");
@@ -668,9 +668,9 @@ public:
 	{
 		code* testing_type = new code;
 		testing_type->k = testing_type->NUMERIC;
-		char tmp_mes[maxStringeSize] = "TestMes";
+		char tmp_mes[MAX_STRING_SIZE] = "TestMes";
 		strcpy(testing_type->message, tmp_mes);
-		char tmp_own[maxStringeSize] = "TestOwn";
+		char tmp_own[MAX_STRING_SIZE] = "TestOwn";
 		strcpy(testing_type->owner, tmp_own);
 		testing_type->b.digit = 5;
 		ofstream test_file_out("../Procedure/Test_Files/Out_middle_numeric.txt");

@@ -7,7 +7,7 @@
 namespace simple_codes 
 {
 	// Максимальная длина исходного текста
-	const int maxStringeSize = 80;
+	const int MAX_STRING_SIZE = 80;
 	// Структура, обобщающая все имеющиеся шифры
 	struct code 
 	{
@@ -20,8 +20,8 @@ namespace simple_codes
 			cezar t;
 			numeric b;
 		};
-		char message[maxStringeSize]; // Исходный текст
-		char owner[maxStringeSize]; // Владелец
+		char message[MAX_STRING_SIZE]; // Исходный текст
+		char owner[MAX_STRING_SIZE]; // Владелец
 	};
 } // end simple_codes namespace
 #endif

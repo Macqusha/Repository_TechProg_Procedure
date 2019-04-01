@@ -3,16 +3,16 @@
 #include "numeric_atd.h"
 
 using namespace std;
-const int maxStringeSize = 80;
+const int MAX_STRING_SIZE = 80;
 
 namespace simple_codes
 {
-	string CodingNumeric(char message[maxStringeSize], int digit)
+	string CodingNumeric(char message[MAX_STRING_SIZE], int digit)
 	{
 		string alf = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxy";
 		string str_mes = "";
 		int i = 0;
-		while ((message[i]) != '\0' && i < maxStringeSize)
+		while ((message[i]) != '\0' && i < MAX_STRING_SIZE)
 		{
 			str_mes += message[i];
 			i++;
@@ -35,7 +35,7 @@ namespace simple_codes
 		ifst >> b.digit;
 	}
 	// Âûגמה ןאנאלוענמג רטפנא Öוחאנÿ
-	void Out(numeric &b, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize])
+	void Out(numeric &b, ofstream &ofst, char message[MAX_STRING_SIZE], char owner[MAX_STRING_SIZE])
 	{
 		ofst << "It is Numeric: digit = " << b.digit
 			<< ", open = " << message

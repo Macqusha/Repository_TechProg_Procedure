@@ -41,9 +41,9 @@ namespace simple_codes {
 	}
 
 	// Сигнатуры требуемых внешних функций 
-	void Out(zamena &r, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize]);
-	void Out(cezar  &t, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize]);
-	void Out(numeric  &t, ofstream &ofst, char message[maxStringeSize], char owner[maxStringeSize]);
+	void Out(zamena &r, ofstream &ofst, char message[MAX_STRING_SIZE], char owner[MAX_STRING_SIZE]);
+	void Out(cezar  &t, ofstream &ofst, char message[MAX_STRING_SIZE], char owner[MAX_STRING_SIZE]);
+	void Out(numeric  &t, ofstream &ofst, char message[MAX_STRING_SIZE], char owner[MAX_STRING_SIZE]);
 
 	// Вывод параметров текущего шифра в поток
 	void Out(code &s, ofstream &ofst) 
@@ -61,10 +61,10 @@ namespace simple_codes {
 		}
 	}
 
-	int StrLength(char mes[maxStringeSize])
+	int StrLength(char mes[MAX_STRING_SIZE])
 	{
 		int length = 0;
-		while (mes[length] != '\0' && length < maxStringeSize) length++;
+		while (mes[length] != '\0' && length < MAX_STRING_SIZE) length++;
 		return length;
 	};
 
