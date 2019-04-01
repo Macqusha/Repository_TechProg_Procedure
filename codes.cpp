@@ -58,6 +58,8 @@ namespace simple_codes {
 		case code::key::NUMERIC:
 			Out(s.b, ofst, s.message, s.owner);
 			break;
+		default:
+			ofst << "Incorrect figure!" << endl;
 		}
 	}
 
