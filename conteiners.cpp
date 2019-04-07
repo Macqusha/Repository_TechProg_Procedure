@@ -64,6 +64,9 @@ namespace simple_codes {
 						case code::key::CEZAR:
 							ofst << "Zamena and Cezar." << endl;
 							break;
+						case code::key::NUMERIC:
+							ofst << "Zamena and Numeric." << endl;
+							break;
 						default:
 							ofst << "Unknown type." << endl;
 						}
@@ -76,6 +79,24 @@ namespace simple_codes {
 						case code::key::CEZAR:
 							ofst << "Cezar and Cezar." << endl;
 							break;
+						case code::key::NUMERIC:
+							ofst << "Cezar and Numeric." << endl;
+							break;
+						default:
+							ofst << "Unknown type." << endl;
+						}
+						break;
+					case code::key::NUMERIC:
+						switch (c.cont[j]->k) {
+						case code::key::ZAMENA:
+							ofst << "Numeric and Zamena." << endl;
+							break;
+						case code::key::CEZAR:
+							ofst << "Numeric and Cezar." << endl;
+							break;
+						case code::key::NUMERIC:
+							ofst << "Numeric and Numeric." << endl;
+							break;
 						default:
 							ofst << "Unknown type." << endl;
 						}
@@ -87,7 +108,8 @@ namespace simple_codes {
 					Out(*(c.cont[j]), ofst);
 				}
 			}
-	}
+	}
+
 } // end simple_codes namespace
 
 

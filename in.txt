@@ -4,6 +4,9 @@ keep
 2
 3
 it
+3
+2
+numeric
 1
 2
 simple
