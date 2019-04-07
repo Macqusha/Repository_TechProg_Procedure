@@ -13,6 +13,7 @@ namespace simple_codes {
 	void Out(container &c, ofstream &ofst);
 	void Sort(container &c);
 	void OutZamena(container &c, ofstream &ofst);
+	void MultiMethod(container &c, ofstream &ofst);
 }
 
 using namespace simple_codes;
@@ -114,6 +115,8 @@ int main(int argc, char* argv[])
 	Out(c, ofst);
 	ofst << endl;
 	OutZamena(c, ofst);
+	ofst << endl;
+	MultiMethod(c, ofst);
 	ofst << endl;
 	Clear(c);
 	ofst << "Empty container. " << endl;
