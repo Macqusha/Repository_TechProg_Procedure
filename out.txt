@@ -10,5 +10,142 @@ Container contains 10 elements.
 7: It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
 8: It is Cezar: rot = 8, open = repeat, code = zmxmib.
 9: It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+
+Multimethod.
+Zamena and Cezar.
+It is Zamena: rule = Atbash, open = keep, code = pvvk.
+It is Cezar: rot = 3, open = it, code = lw.
+Zamena and Zamena.
+It is Zamena: rule = Atbash, open = keep, code = pvvk.
+It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
+Zamena and Cezar.
+It is Zamena: rule = Atbash, open = keep, code = pvvk.
+It is Cezar: rot = 5, open = stupid, code = xyzuni.
+Zamena and Zamena.
+It is Zamena: rule = Atbash, open = keep, code = pvvk.
+It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
+Zamena and Cezar.
+It is Zamena: rule = Atbash, open = keep, code = pvvk.
+It is Cezar: rot = 25, open = is, code = hr.
+Zamena and Cezar.
+It is Zamena: rule = Atbash, open = keep, code = pvvk.
+It is Cezar: rot = 26, open = evil, code = evil.
+Zamena and Zamena.
+It is Zamena: rule = Atbash, open = keep, code = pvvk.
+It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
+Zamena and Cezar.
+It is Zamena: rule = Atbash, open = keep, code = pvvk.
+It is Cezar: rot = 8, open = repeat, code = zmxmib.
+Zamena and Cezar.
+It is Zamena: rule = Atbash, open = keep, code = pvvk.
+It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+Cezar and Zamena.
+It is Cezar: rot = 3, open = it, code = lw.
+It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
+Cezar and Cezar.
+It is Cezar: rot = 3, open = it, code = lw.
+It is Cezar: rot = 5, open = stupid, code = xyzuni.
+Cezar and Zamena.
+It is Cezar: rot = 3, open = it, code = lw.
+It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
+Cezar and Cezar.
+It is Cezar: rot = 3, open = it, code = lw.
+It is Cezar: rot = 25, open = is, code = hr.
+Cezar and Cezar.
+It is Cezar: rot = 3, open = it, code = lw.
+It is Cezar: rot = 26, open = evil, code = evil.
+Cezar and Zamena.
+It is Cezar: rot = 3, open = it, code = lw.
+It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
+Cezar and Cezar.
+It is Cezar: rot = 3, open = it, code = lw.
+It is Cezar: rot = 8, open = repeat, code = zmxmib.
+Cezar and Cezar.
+It is Cezar: rot = 3, open = it, code = lw.
+It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+Zamena and Cezar.
+It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
+It is Cezar: rot = 5, open = stupid, code = xyzuni.
+Zamena and Zamena.
+It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
+It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
+Zamena and Cezar.
+It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
+It is Cezar: rot = 25, open = is, code = hr.
+Zamena and Cezar.
+It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
+It is Cezar: rot = 26, open = evil, code = evil.
+Zamena and Zamena.
+It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
+It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
+Zamena and Cezar.
+It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
+It is Cezar: rot = 8, open = repeat, code = zmxmib.
+Zamena and Cezar.
+It is Zamena: rule = Pare-change, open = simple, code = tjnokf.
+It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+Cezar and Zamena.
+It is Cezar: rot = 5, open = stupid, code = xyzuni.
+It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
+Cezar and Cezar.
+It is Cezar: rot = 5, open = stupid, code = xyzuni.
+It is Cezar: rot = 25, open = is, code = hr.
+Cezar and Cezar.
+It is Cezar: rot = 5, open = stupid, code = xyzuni.
+It is Cezar: rot = 26, open = evil, code = evil.
+Cezar and Zamena.
+It is Cezar: rot = 5, open = stupid, code = xyzuni.
+It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
+Cezar and Cezar.
+It is Cezar: rot = 5, open = stupid, code = xyzuni.
+It is Cezar: rot = 8, open = repeat, code = zmxmib.
+Cezar and Cezar.
+It is Cezar: rot = 5, open = stupid, code = xyzuni.
+It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+Zamena and Cezar.
+It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
+It is Cezar: rot = 25, open = is, code = hr.
+Zamena and Cezar.
+It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
+It is Cezar: rot = 26, open = evil, code = evil.
+Zamena and Zamena.
+It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
+It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
+Zamena and Cezar.
+It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
+It is Cezar: rot = 8, open = repeat, code = zmxmib.
+Zamena and Cezar.
+It is Zamena: rule = Keyword-change, open = duplication, code = fqjbeispegd.
+It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+Cezar and Cezar.
+It is Cezar: rot = 25, open = is, code = hr.
+It is Cezar: rot = 26, open = evil, code = evil.
+Cezar and Zamena.
+It is Cezar: rot = 25, open = is, code = hr.
+It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
+Cezar and Cezar.
+It is Cezar: rot = 25, open = is, code = hr.
+It is Cezar: rot = 8, open = repeat, code = zmxmib.
+Cezar and Cezar.
+It is Cezar: rot = 25, open = is, code = hr.
+It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+Cezar and Zamena.
+It is Cezar: rot = 26, open = evil, code = evil.
+It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
+Cezar and Cezar.
+It is Cezar: rot = 26, open = evil, code = evil.
+It is Cezar: rot = 8, open = repeat, code = zmxmib.
+Cezar and Cezar.
+It is Cezar: rot = 26, open = evil, code = evil.
+It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+Zamena and Cezar.
+It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
+It is Cezar: rot = 8, open = repeat, code = zmxmib.
+Zamena and Cezar.
+It is Zamena: rule = Incorrect rule number, open = dont, code = dont.
+It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
+Cezar and Cezar.
+It is Cezar: rot = 8, open = repeat, code = zmxmib.
+It is Cezar: rot = 9, open = yourself, code = hxdabnuo.
 Empty container. 
 Container contains 0 elements.

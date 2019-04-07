@@ -11,6 +11,7 @@ namespace simple_codes {
 	void Clear(container &c);
 	void In(container &c, ifstream &ifst);
 	void Out(container &c, ofstream &ofst);
+	void MultiMethod(container &c, ofstream &ofst);
 }
 
 using namespace simple_codes;
@@ -46,6 +47,8 @@ int main(int argc, char* argv[])
 	In(c, ifst);
 	ofst << "Filled container. " << endl;
 	Out(c, ofst);
+	ofst << endl;
+	MultiMethod(c, ofst);
 	Clear(c);
 	ofst << "Empty container. " << endl;
 	Out(c, ofst);
