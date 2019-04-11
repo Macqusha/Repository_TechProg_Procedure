@@ -34,6 +34,7 @@ namespace simple_codes
 	{
 		ifst >> b.digit;
 	}
+
 	// Âûגמה ןאנאלוענמג רטפנא Öוחאנÿ
 	void Out(numeric &b, ofstream &ofst, char message[MAX_STRING_SIZE], char owner[MAX_STRING_SIZE])
 	{
